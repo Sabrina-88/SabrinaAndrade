@@ -7,6 +7,7 @@
 		color:rgba(251,11,78,1.00)/*rgb(154,16,59)*/;
 		height: 100px;
 		position:fixed; 
+		z-index: 9;
 		top:0;
 		left:0;
 		font-size:20px;
@@ -154,8 +155,8 @@ div.item_galeria_portifolio li{  /*icone de busca*/
 }
 
 div.item_galeria_portifolio div{
-	width:280px;
-	height:508px;
+	width:272px;
+	height:500px;
 	background-color:rgba(25,25,25,0.37);
 	position:absolute;
 	top:0;
@@ -171,12 +172,14 @@ div.item_galeria_portifolio div.aparece{
 div.item_galeria_portifolio div i{
 	color:rgba(237,15,119,1.00);
 	background-color:white;
-	width:46px;
-	height:46px;
+	width:76px;
+	height:76px;
 	text-align:center;
 	padding:30px;
 	margin:63% auto 0 auto;
-	display:block;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	border-radius: 50%;	
 }
 div.item_galeria_portifolio div i:hover{
