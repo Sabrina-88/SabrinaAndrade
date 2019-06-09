@@ -5,49 +5,38 @@
 	text-decoration: none;
 }
 /*******************************************************Inicio Header******************************************/
-header#cabecalho {
-	background-color: rgba(249,249,249,0.66);
-	color: rgba(251,11,78,1.00)/*rgb(154,16,59)*/;
-	width: 100%;
-	height: 100px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 999;
-	font-size: 22px;
-	font-family: Helvetica, Arial, sans-serif;
+nav#cabecalho {
+	background: rgba(249, 249, 249, 0.1) !important;
+	z-index: 9999;
 	transition: 2s;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-img#logo {
-	margin-bottom: 50px;
-}
+
 ul.menu {
 	list-style: none;
 	float: right;
 }
 ul.menu li {
 	position: relative;
-	float: left;
-	width: 150px;
+	width:150px;
 	text-align: center;
-	top: 30px;
 	border-right: 4px dotted rgb(77,75,75);
 }
 ul.menu li a {
 	text-decoration: none;
-	color: rgba(251,11,78,1.00);
+	color: rgba(251,11,78,1.00) !important; /*rgb(154,16,59)*/
 	font-size: 22px;
+	font-weight: bold;
 	font-family: Helvetica, Arial, sans-serif;
-	text-shadow: 3px -1px 6px rgba(150, 150, 150, 1);
+	text-shadow: 3px -1px 6px rgba(80, 80, 80, 1);
 }
 /*******************************************************Final Header******************************************/
 /*******************************************************Inicio Principal******************************************/
 div#principal {
 	width: 100%;
-	height: 100%;
-	/*position:absolute;*/
+	height: 500px;
+    margin: 0;
 	background-image: url(https://i.imgur.com/AKmuCRr.png);
-	/*background-attachment:fixed;*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -56,19 +45,17 @@ div#principal {
 	-ms-background-size: cover; /* IE */
 	-o-background-size: cover; /* OPERA */
 }
-div#content {
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-}
+
 div#principal p#apresentacao {
 	color: white;
 	font-size: 36px;
 	font-weight: 700;
 	text-align: center;
-	padding: 20% 50px 70px 50px;
+	padding: 8% 50px 70px 50px;
 	font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-style: italic;
+	line-height: 1.3;
+    margin: auto;
 }
 div#principal span#special {
 	color: rgba(251,11,78,1.00);
@@ -104,7 +91,6 @@ div#btn button#botao:hover {
 div#btn button#botao a:hover {
 	background-color: rgba(0,0,0,0.02);
 	cursor: pointer;
-	font-size: -150%;
 }
 /*******************************************************Final Principal******************************************/
 /*******************************************************Inicio portifolio******************************************/

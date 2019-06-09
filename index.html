@@ -10,33 +10,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/3TaWrE6.png"/>
   <link href="estilo.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <script src="lib/jquery.min.js"></script>
-          <link  rel="stylesheet" href="lib/lightbox2-master/src/css/lightbox.css"> 
-        <script src="lib/lightbox2-master/src/js/lightbox.js"></script>
+        <!--   <link  rel="stylesheet" href="lib/lightbox2-master/src/css/lightbox.css"> 
+        <script src="lib/lightbox2-master/src/js/lightbox.js"></script> -->
           <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
           
   </head>
 
-  <body>
+  <body  >
   <!--MENU-->
-  <header class="col-12 col-sm-12" id="cabecalho">
+  <div class="container-fluid" id="principal">
+<nav class="navbar navbar-expand-lg fixed-top" id="cabecalho">
+  <a class="navbar-brand" href="https://sabrina-88.github.io/SabrinaAndrade/">
+    <img src="https://i.imgur.com/SUIg5kw.png" class="col-10 col-sm-6" id="logo" alt="Sabrina_Andrade" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon bg-primary"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu">
+      <li class="nav-item active">
+        <a class="nav-link menu1" href="#portfolio">Portfólio<span class="sr-only">(Página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu2" href="#sobre">Sobre Mim</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu3" href=https://medium.com/@sabrina_andrade>Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu4" href="#contato">Contato</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--  <header class="col-12 col-sm-12" id="cabecalho">
     <nav id="menu_principal">
       
        <a href="https://portfoliosabrina.000webhostapp.com/"><img src="https://i.imgur.com/SUIg5kw.png" class="col-7 col-sm-6" id="logo" alt="Sabrina_Andrade" ></a> 
       <ul class="menu col-5 col-sm-5 d-inline-flex d-sm-inline-flex">
         <li><a class="menu1" href="#portfolio">Portfólio</a></li>
-        <!--<li><a class="menu2" href="#sobre">Sobre Mim</a></li>-->
+       <li><a class="menu2" href="#sobre">Sobre Mim</a></li>
         <li><a class="menu3" href=https://medium.com/@sabrina_andrade>Blog</a></li>
         <li><a class="menu4" href="#contato">Contato</a></li>
       </ul>
     </nav>
-  </header>
+  </header>  -->
 
  <!--PRINCIPAL-->
 
- <div id="principal">
-<div id="conteudo">
+ 
+<div  id="conteudo">
 <p id="apresentacao">Oi, tudo bem? Meu nome é <span id="special">Sabrina Andrade</span>, sou apaixonada por desenvolvimento web e estou sempre me atualizando sobre novas tecnologias. Criei este portfólio para você conhecer meu trabalho. Espero que goste!</p>
 <div id="btn">
 <a class="menu1" href="#portfolio"><button id="botao">Portfólio</button></a>
