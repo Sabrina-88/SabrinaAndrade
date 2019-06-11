@@ -20,12 +20,13 @@ ul.menu li {
 	position: relative;
 	width:150px;
 	text-align: center;
+	height: 40px;
 	border-right: 4px dotted rgb(77,75,75);
 }
 ul.menu li a {
 	text-decoration: none;
 	color: rgba(251,11,78,1.00) !important; /*rgb(154,16,59)*/
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: bold;
 	font-family: Helvetica, Arial, sans-serif;
 	text-shadow: 3px -1px 6px rgba(80, 80, 80, 1);
@@ -35,7 +36,6 @@ ul.menu li a {
 div#principal {
 	width: 100%;
 	height: 500px;
-    margin: 0;
 	background-image: url(https://i.imgur.com/AKmuCRr.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -48,9 +48,8 @@ div#principal {
 
 div#principal p#apresentacao {
 	color: white;
-	font-size: 36px;
+	font-size: 2em;
 	font-weight: 700;
-	text-align: center;
 	padding: 8% 50px 70px 50px;
 	font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-style: italic;
@@ -60,13 +59,11 @@ div#principal p#apresentacao {
 div#principal span#special {
 	color: rgba(251,11,78,1.00);
 }
-div#btn {
-	width: 100%;
-	margin-bottom: 100px;
-}
-div#btn a {
+
+button#botao a {
 	text-decoration: none;
 	cursor: pointer;
+		color: white;
 }
 button#botao {
 	background: rgba(251,11,78,1.00);
@@ -74,21 +71,20 @@ button#botao {
 	width: 200px;
 	height: 50px;
 	display: block;
-	margin: 0 auto;
 	text-decoration: none;
 	cursor: pointer;
 	border: none;
-	font-size: 24px;
+	font-size: 22px;
 	font-family: Helvetica, Arial, sans-serif;
-	transition: 2s;
+	transition: 1s;
 }
-div#btn button#botao:hover {
+ button#botao:hover {
 	background-color: rgba(0,0,0,0.02);
 	border: 2px solid white;
 	cursor: pointer;
-	transition: 2s;
+	transition: 1s;
 }
-div#btn button#botao a:hover {
+ button#botao a:hover {
 	background-color: rgba(0,0,0,0.02);
 	cursor: pointer;
 }
@@ -96,36 +92,35 @@ div#btn button#botao a:hover {
 /*******************************************************Inicio portifolio******************************************/
 
 div.galeria_portifolio { /*espaco da galeria*/
-	/*width:980px;*/
-	height: 100%;/*-webkit-fill-available;*/
-	margin: 0 12%;
+
 	display: block;
 	overflow: hidden;
 	padding: 10px 50px;/*background-color: rgba(0,0,0,0.1);*/ /*coloquei esse codigo somente para visualizar a area, pode-se nao colocar nada e fica branco */
 }
+
 section#portfolio h3 {
 	border-bottom: 2px solid rgba(150,150,150,0.60);
-	padding: 50px 200px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 36px;
+	padding: 20px 80px;
 	color: rgba(251,11,78,1.00);
 }
 section#portfolio p#subtitulo {
 	color: rgb(251,11,78);
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 36px;
+	font-size: 1.7em;
 	font-weight: 600;
 	margin-left: 10px;
 }
 div#centralizar_portfolio {
-	display: block;
+
 	margin: 0px auto;
 }
 div.item_galeria_portifolio {  /*cada item da galeria*/
 	width: 272px;
-	margin: 30px 15px 0px 15px;
+	/*margin: 30px 15px 0px 15px;
 	float: left;
-	position: relative
+	position: relative*/
 }
 div.item_galeria_portifolio li {  /*icone de busca*/
 	width: inherit;
@@ -134,10 +129,10 @@ div.item_galeria_portifolio div{
 	width:272px;
 	height:500px;
 	background-color:rgba(25,25,25,0.37);
-	position:absolute;
+	/*position:absolute;
 	top:0;
 	left:0;
-	visibility:hidden;
+	visibility:hidden*/;
 	transition: 0.5s;
 	opacity:0	
 }
@@ -164,11 +159,8 @@ div.item_galeria_portifolio div i:hover{
 	transition:0.5s
 }
 
-	
-	ul.album-fotos{
-		list-style: none;}
 
-ul.album-fotos li { /* codigo para cada quadrado de foto, cada li */
+div.album-fotos li { /* codigo para cada quadrado de foto, cada li */
 	float: left;
 	width: 272px;
 	height: 500px;
@@ -176,7 +168,7 @@ ul.album-fotos li { /* codigo para cada quadrado de foto, cada li */
 	background-color: #ffffff;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
-ul.album-fotos li span{ /* codigo para as legendas das fotos */
+div.album-fotos li span{ /* codigo para as legendas das fotos */
 	opacity: 0;
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
@@ -187,7 +179,7 @@ ul.album-fotos li span{ /* codigo para as legendas das fotos */
 }
 
 
-div.item_galeria_portifolio ul.album-fotos a{
+figure.item_galeria_portifolio div.album-fotos a{
 	text-decoration:none;
     color:rgb(251,11,78);
 	font-size:18px;
@@ -196,7 +188,7 @@ div.item_galeria_portifolio ul.album-fotos a{
 	cursor:crosshair;
 	text-align:center;}
 	
-ul.album-fotos li#foto01 { /*codigos para determinar a imagem de fundo, a posicao, o tamanho da imagem idependente do tamanho do "quadrado", cor de fundo */
+div.album-fotos img#foto01 { /*codigos para determinar a imagem de fundo, a posicao, o tamanho da imagem idependente do tamanho do "quadrado", cor de fundo */
 	background:url(https://i.imgur.com/mw6reZq.jpg) no-repeat;	
 	background-position: 50% 50%;
 	display:block;
@@ -204,7 +196,7 @@ ul.album-fotos li#foto01 { /*codigos para determinar a imagem de fundo, a posica
 }
 
 
-ul.album-fotos li#foto02 {
+div.album-fotos img#foto02 {
 	background:url(https://i.imgur.com/uwdJ1oW.png) no-repeat;	
 	background-position: 50% 50%;
 	display:block;
@@ -212,14 +204,14 @@ ul.album-fotos li#foto02 {
 }
 
 
-ul.album-fotos li#foto03 {
+div.album-fotos img#foto03 {
 	background: url(https://i.imgur.com/rNUT977.png) no-repeat;	
 	background-position: 50% 50%;
 	display:block;
     background-size:400px 800px;
 }
 
-ul.album-fotos li#foto04 {
+div.album-fotos img#foto04 {
 	background:url(https://i.imgur.com/CKLq3Ns.png)  no-repeat;	
 	background-position: 50% 50%;
 	display:block;
@@ -227,14 +219,14 @@ ul.album-fotos li#foto04 {
 }
 
 
-ul.album-fotos li#foto05 {
+div.album-fotos img#foto05 {
 	background:url(https://i.imgur.com/LJdZLCN.png) no-repeat;
 	background-position: 50% 50%;
 	display:block;
     background-size: 400px 550px;
 }
 
-ul.album-fotos li#foto06 {
+div.album-fotos img#foto06 {
 	background:url(https://i.imgur.com/J99IAkT.png) no-repeat;	
 	background-position: 50% 50%;
 	display:block;
