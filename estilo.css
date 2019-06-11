@@ -112,27 +112,12 @@ section#portfolio p#subtitulo {
 	font-weight: 600;
 	margin-left: 10px;
 }
-div#centralizar_portfolio {
 
-	margin: 0px auto;
-}
-div.item_galeria_portifolio {  /*cada item da galeria*/
-	width: 272px;
-	/*margin: 30px 15px 0px 15px;
-	float: left;
-	position: relative*/
-}
-div.item_galeria_portifolio li {  /*icone de busca*/
-	width: inherit;
-}
+
 div.item_galeria_portifolio div{
 	width:272px;
 	height:500px;
 	background-color:rgba(25,25,25,0.37);
-	/*position:absolute;
-	top:0;
-	left:0;
-	visibility:hidden*/;
 	transition: 0.5s;
 	opacity:0	
 }
@@ -179,14 +164,16 @@ div.album-fotos li span{ /* codigo para as legendas das fotos */
 }
 
 
-figure.item_galeria_portifolio div.album-fotos a{
+figure a,
+figure a:hover{
 	text-decoration:none;
     color:rgb(251,11,78);
 	font-size:18px;
 	font-weight:600;
 	font-family:Helvetica, Arial, sans-serif;
 	cursor:crosshair;
-	text-align:center;}
+	text-align:center;
+}
 	
 div.album-fotos img#foto01 { /*codigos para determinar a imagem de fundo, a posicao, o tamanho da imagem idependente do tamanho do "quadrado", cor de fundo */
 	background:url(https://i.imgur.com/mw6reZq.jpg) no-repeat;	
