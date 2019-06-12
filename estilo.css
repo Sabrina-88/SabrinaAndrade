@@ -144,23 +144,19 @@ div.item_galeria_portifolio div i:hover{
 	transition:0.5s
 }
 
-
-div.album-fotos li { /* codigo para cada quadrado de foto, cada li */
-	float: left;
-	width: 272px;
+div.album-fotos a img{
 	height: 500px;
-	border: 5px solid #ffffff;
-	background-color: #ffffff;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    width: 400px;
 }
-div.album-fotos li span{ /* codigo para as legendas das fotos */
-	opacity: 0;
+div.album-fotos:hover{ /* codigo para as legendas das fotos */
+	opacity: 0.3;
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
 	background-color: rgba(0,0,0,0.3);
 	font-size: 9pt;
 	line-height: 370px;
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 
@@ -171,66 +167,12 @@ figure a:hover{
 	font-size:18px;
 	font-weight:600;
 	font-family:Helvetica, Arial, sans-serif;
-	cursor:crosshair;
 	text-align:center;
 }
 	
-div.album-fotos img#foto01 { /*codigos para determinar a imagem de fundo, a posicao, o tamanho da imagem idependente do tamanho do "quadrado", cor de fundo */
-	background:url(https://i.imgur.com/mw6reZq.jpg) no-repeat;	
-	background-position: 50% 50%;
-	display:block;
-    background-size: 400px 800px;
-}
-
-
-div.album-fotos img#foto02 {
-	background:url(https://i.imgur.com/uwdJ1oW.png) no-repeat;	
-	background-position: 50% 50%;
-	display:block;
-    background-size: 400px 800px;
-}
-
-
-div.album-fotos img#foto03 {
-	background: url(https://i.imgur.com/rNUT977.png) no-repeat;	
-	background-position: 50% 50%;
-	display:block;
-    background-size:400px 800px;
-}
-
-div.album-fotos img#foto04 {
-	background:url(https://i.imgur.com/CKLq3Ns.png)  no-repeat;	
-	background-position: 50% 50%;
-	display:block;
-    background-size: 400px 800px;
-}
-
-
-div.album-fotos img#foto05 {
-	background:url(https://i.imgur.com/LJdZLCN.png) no-repeat;
-	background-position: 50% 50%;
-	display:block;
-    background-size: 400px 550px;
-}
-
-div.album-fotos img#foto06 {
-	background:url(https://i.imgur.com/J99IAkT.png) no-repeat;	
-	background-position: 50% 50%;
-	display:block;
-    background-size: 400px 550px;
-}
-
-/*a.descricao{
-	text-shadow:#969696 1px -1px 1px, 
-				#969696 -1px 1px 1px,
-				#969696 1px 1px 1px, 
-				#969696 -1px -1px 1px}*/
-
-
 /**************************************************inicio contato*****************************************/
 
 section#contato{
-	
 	/*height: 100%;*/
 	margin:0 auto;
 	overflow:hidden;
@@ -283,7 +225,6 @@ ul#midias li a i:hover{
 	text-align: center;}
 
  span#email{
-	 
 	font-family:Helvetica, Arial, sans-serif;}
 /*******************************************************Inicio Footer******************************************/
  footer#rodape{
