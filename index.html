@@ -23,8 +23,8 @@
     <a class="navbar-brand" href="https://sabrina-88.github.io/SabrinaAndrade/">
       <img src="https://i.imgur.com/SUIg5kw.png" class="col-10 col-sm-6" id="logo" alt="Sabrina_Andrade" >
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon bg-primary"></span>
+    <button class="navbar-toggler navbar navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon "></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu">
@@ -32,7 +32,7 @@
           <a class="nav-link menu1" href="#portfolio">Portfólio<span class="sr-only">(Página atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu2" href="#sobre">Sobre Mim</a>
+          <a class="nav-link menu2" href="sobremim.html">Sobre Mim</a>
         </li>
         <li class="nav-item">
           <a class="nav-link menu3" href=https://medium.com/@sabrina_andrade>Blog</a>
@@ -47,44 +47,56 @@
     <!--PRINCIPAL-->
   <div class="jumbotron text-center" style="margin-bottom:0" id="principal">
     <div class="col-md-10 p-lg-10 mx-auto my-auto"> 
-      <p class="text-center " id="apresentacao">Oi, tudo bem? Meu nome é <span id="special">Sabrina Andrade</span>, sou apaixonada por desenvolvimento web e estou sempre me atualizando sobre novas tecnologias. Criei este portfólio para você conhecer meu trabalho. Espero que goste!</p>
-      <button type="button" class="my-auto mx-auto" id="botao"> 
+      <p class="text-center d-none d-sm-block" id="apresentacao1">Oi, tudo bem? Meu nome é <span id="special">Sabrina Andrade</span>, sou apaixonada por desenvolvimento web e estou sempre me atualizando sobre novas tecnologias. Criei este portfólio para você conhecer meu trabalho. Espero que goste!</p>
+      <button type="button" class="d-none d-sm-block my-auto mx-auto button" id="botao1"> 
         <a class="menu1" href="#portfolio">Portfólio</a>
-      </button>   
+      </button> 
+      <div class="d-block d-sm-none"> 
+      <p class="text-center" id="apresentacao2">Oi, tudo bem? Meu nome é <span id="special">Sabrina Andrade</span>, sou apaixonada por desenvolvimento web e estou sempre me atualizando sobre novas tecnologias. Criei este portfólio para você conhecer meu trabalho. Espero que goste!</p>
+      <button type="button" class="d-block d-sm-none my-auto mx-auto button" id="botao2"> 
+        <a class="menu1" href="#portfolio">Portfólio</a>
+      </button>  
+      </div> 
     </div>
   </div> <!-- fim do PRINCIPAL-->
-        
-      <!-- <div class="row ">
-        <figure class="col-md-4 ">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg">
-            <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
-          </a>
-        </figure>
-      </div> -->
-
-
   <section id="portfolio">
     <h3>Portfólio</h3>
     <div class="container"> 
+      
       <p id="subtitulo">Layout para Site</p>
     <div class="row justify-content-md-center">
-      <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" >
-            <img alt="picture" id="foto01"src="https://i.imgur.com/mw6reZq.jpg"  class="img-fluid img-thumbnail" />
-          </a>
+       <figure class="col-md-4 ">
+        <div class="hovereffect">
+            <img alt="picture" src="https://i.imgur.com/uwdJ1oW.png" class="img-fluid" />
+            <div class="overlay">
+                      
+                        <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                     
+                      <!--  <div class="links">
+                        <div class="descricao" href="https://sabrina-88.github.io/lab-car-boilerplate/" target="_blank" rel="noopener">Lab Car - Desenvolvimento do Layout</div>
+                      </div> -->
+
+            </div>
         </div>
-        <a class="descricao" href="https://sabrina-88.github.io/freelancer/">Freelancer - Desenvolvimento do Layout</a>
+        <a class="descricao" href="https://sabrina-88.github.io/lab-car-boilerplate/" target="_blank" rel="noopener">Lab Car - Desenvolvimento do Layout</a>
       </figure>
-          <!--<a href="https://i.imgur.com/fDRRrQ1.png" data-lightbox="imagem">
-             	<i class="fa fa-search" style="font-size:28px; "></i>
-            </a> -->
+      <!-- 
+      <a href="https://i.imgur.com/hyEmp55.png" data-lightbox="imagem">
+          <i class="fa fa-search" style="font-size:28px; "></i>
+        </a> -->
+          
 
       <figure class="col-md-4 ">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/uwdJ1oW.png" class="img-fluid img-thumbnail" />
-          </a>
+        <div class="hovereffect">
+            <img alt="picture" src="https://i.imgur.com/uwdJ1oW.png" class="img-fluid" />
+                        <div class="overlay">
+               
+                         <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                      
+
+            </div>
         </div>
         <a class="descricao" href="https://sabrina-88.github.io/lab-car-boilerplate/" target="_blank" rel="noopener">Lab Car - Desenvolvimento do Layout</a>
       </figure>
@@ -92,23 +104,18 @@
     	<a href="https://i.imgur.com/hyEmp55.png" data-lightbox="imagem">
         	<i class="fa fa-search" style="font-size:28px; "></i>
         </a> -->
+     
       <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/rNUT977.png" class="img-fluid img-thumbnail" />
-          </a>
-        </div>
-        <a class="descricao" href="https://dayraroberta.github.io/data-dashboard/">Data Dashboard - Criação do Layout e  Desenvolvimento Javascript </a>
-      </figure>
-     <!-- 
-    	<a href="https://i.imgur.com/1wUBQ9S.png" data-lightbox="imagem">
-        	<i class="fa fa-search" style="font-size:28px; "></i>
-        </a>-->
-      <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/CKLq3Ns.png" class="img-fluid img-thumbnail" />
-          </a>
+        <div class="hovereffect">
+
+            <img alt="picture" src="https://i.imgur.com/CKLq3Ns.png" class="img-fluid" />
+                        <div class="overlay">
+               
+                         <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                      
+
+            </div>
         </div>
         <a class="descricao" href="#">Meteor - Desenvolvimento do Layout</a>
       </figure>
@@ -118,10 +125,16 @@
         </a> -->
 
       <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/LJdZLCN.png" class="img-fluid img-thumbnail" />
-          </a>
+        <div class="hovereffect">
+
+            <img alt="picture" src="https://i.imgur.com/LJdZLCN.png" class="img-fluid" />
+                        <div class="overlay">
+               
+                         <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                      
+
+            </div>
         </div>
         <a class="descricao" href="https://fdcc.000webhostapp.com/" target="_blank" rel="noopener">Dot Web Designer - Criação e Desenvolvimento do Layout</a>
       </figure>
@@ -130,10 +143,16 @@
       	<i class="fa fa-search" style="font-size:28px; "></i>
       </a> -->
       <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/J99IAkT.png" class="img-fluid img-thumbnail" />
-          </a>
+        <div class="hovereffect">
+
+            <img alt="picture" src="https://i.imgur.com/J99IAkT.png" class="img-fluid" />
+                        <div class="overlay">
+               
+                         <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                      
+
+            </div>
         </div>
         <a class="descricao" href="https://sabrina-88.github.io/lyft/">Lyft - Desenvolvimento do Layout</a>
       </figure>
@@ -142,10 +161,16 @@
       	<i class="fa fa-search" style="font-size:28px; "></i>
       </a> -->
       <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/mw6reZq.jpg" class="img-fluid img-thumbnail" />
-          </a>
+        <div class="hovereffect">
+
+            <img alt="picture" src="https://i.imgur.com/mw6reZq.jpg" class="img-fluid" />
+                        <div class="overlay">
+               
+                         <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                      
+
+            </div>
         </div>
         <a class="descricao" href="https://exorlandocity.000webhostapp.com/" target="_blank" rel="noopener"> Orlando City - Desenvolvimento do Layout</a>
       </figure>
@@ -154,31 +179,24 @@
       	<i class="fa fa-search" style="font-size:28px; "></i>
       </a> -->
       <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/mw6reZq.jpg" class="img-fluid img-thumbnail" />
-          </a>
+        <div class="hovereffect">
+
+            <img alt="picture" src="https://i.imgur.com/mw6reZq.jpg" class="img-fluid" />
+                        <div class="overlay">
+               
+                         <a href="#"><i class="fa fa-github"></i></a>
+                       <a href="#"><i class="fa fa-external-link"></i></a>
+                     
+
+            </div>
         </div>
         <a class="descricao" href="#">Pizzaria - Criação e Desenvolvimento do Layout</a>
       </figure>
    <!--  
   	<a href="https://i.imgur.com/LJdZLCN.png" data-lightbox="imagem">
-      	<i class="fa fa-search" style="font-size:28px; "></i>
-      </a> -->
+      	<i class="fa fa-search" style="font-size:28px; "></i      </a> -->
 
-      <figure class="col-md-4">
-        <div class="album-fotos">
-          <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg">
-            <img alt="picture" src="https://i.imgur.com/mw6reZq.jpg" class="img-fluid img-thumbnail" />
-          </a>
-        </div>
-        <a class="descricao" href="#">Ella Bella - Criação e Desenvolvimento do Layout</a>                    
-      </figure>
-   <!-- 
-  	<a href="https://i.imgur.com/rNUT977.png" data-lightbox="imagem">
-      	<i class="fa fa-search" style="font-size:28px; "></i>
-      </a> -->
-
+    
       <!--<p id="subtitulo">Outras imagens</p>-->				                     
     </div>  
   </div>   <!-- fim centralizar portifolio-->           
@@ -217,8 +235,9 @@
             <i class="fa fa-envelope"> </i>
           </a>
         </li>
+
         <span id="email" style="font-size:22px;
-          color: rgba(251,11,78,1.00); padding:0px;">sabrina.andrade.leite@gmail.com</span>
+          color: rgba(251,11,78,1.00); ">sabrina.andrade.leite@gmail.com</span>
         </ul>
       </section>   
 
