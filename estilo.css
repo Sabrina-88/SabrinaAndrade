@@ -152,31 +152,70 @@ section#portfolio p#subtitulo {
 }
 
 .hovereffect {
-    /* width: 100%; */
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
-    width: 354px;
+    max-width: 354px;
+    height: 400px;
     margin: 30px 15px 0px 15px;
     float: left;
     position: relative;
 }
 
-.hovereffect .each-img {}
-
 .hovereffect img {
     display: block;
     position: relative;
     background-size: cover;
-    min-width: 354px;
+    /*min-width: 354px;
     max-height: 500px;
-    /* width: 354px; */
-    height: 500px;
+     width: 354px;
+    height: 500px; */
     -webkit-transition: all .4s linear;
     transition: all .4s linear;
-    background-size: auto;
     background-position: top center;
+}
+
+#calc {
+    margin-left: -100px;
+    margin-top: -95px;
+}
+
+#analytics {
+    margin-left: -245px;
+    transform: scale(0.7);
+    margin-top: -152px;
+}
+
+#search {
+    margin-left: -255px;
+}
+
+#airscoresite {
+    margin-top: -78px;
+}
+
+#dot {
+    transform: scale(0.6);
+    margin-top: -351%;
+    margin-left: -97%;
+}
+
+#emoticongame {
+    transform: scale(1.5);
+    margin-left: 100px;
+    margin-top: 64px;
+}
+
+#buscador {
+    margin-top: -65px;
+    margin-left: -112px;
+}
+
+#orlando {
+    margin-left: -337px;
+    margin-top: -616px;
+    transform: scale(0.5);
 }
 
 .hovereffect .overlay {
@@ -224,7 +263,7 @@ section#portfolio p#subtitulo {
 }
 
 .hovereffect:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
 }
 
 .overlay .descricao {
