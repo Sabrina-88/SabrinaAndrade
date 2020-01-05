@@ -10,9 +10,16 @@
 
 nav#cabecalho {
     background: rgba(249, 249, 249, 0.1) !important;
+    /* background-color: rgba(0, 0, 0, 0.8); */
     z-index: 9999;
     transition: 2s;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+button.navbar-toggler.navbar.navbar-dark.bg-dark {
+    position: absolute !important;
+    margin-top: 0 !important;
+    right: 25px !important;
 }
 
 ul.menu {
@@ -195,7 +202,7 @@ section#portfolio p#subtitulo {
     margin-top: -78px;
 }
 
-#dot {
+.hovereffect img #dot {
     transform: scale(0.6);
     margin-top: -351%;
     margin-left: -97%;
