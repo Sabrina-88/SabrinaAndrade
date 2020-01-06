@@ -162,11 +162,10 @@ section.portfolio p.subtitulo {
     position: relative;
     text-align: center;
     cursor: default;
+    float: left;
     max-width: 354px;
     height: 400px;
     margin: 30px 15px 0px 15px;
-    float: left;
-    position: relative;
 }
 
 .hovereffect img {
